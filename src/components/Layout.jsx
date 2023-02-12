@@ -5,7 +5,7 @@ function Layout({ children, screen }) {
   return (
     <React.Fragment className="px-44">
       <Navbar />
-      <main className="px-28">{children}</main>
+      <main>{children}</main>
     </React.Fragment>
   );
 }

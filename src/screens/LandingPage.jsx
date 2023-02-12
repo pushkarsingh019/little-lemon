@@ -2,12 +2,16 @@ import React from "react";
 import Layout from "../components/Layout";
 
 // importing components
-import HeroSection from "../components/partials/HeroSection";
+import {
+  HeroSection,
+  WeeklySpecials,
+} from "../components/partials/LandingComponents";
 
 function LandingPage() {
   return (
     <Layout>
       <HeroSection />
+      <WeeklySpecials />
     </Layout>
   );
 }
