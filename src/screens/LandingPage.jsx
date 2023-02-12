@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import {
   HeroSection,
   WeeklySpecials,
+  Testimonials,
 } from "../components/partials/LandingComponents";
 
 function LandingPage() {
@@ -12,6 +13,7 @@ function LandingPage() {
     <Layout>
       <HeroSection />
       <WeeklySpecials />
+      <Testimonials />
     </Layout>
   );
 }

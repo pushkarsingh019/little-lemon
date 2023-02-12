@@ -1,6 +1,15 @@
 import React from "react";
 import HeroImage from "../../assets/hero-image.jpg";
 
+// importing components
+import Button from "../Button";
+import SpecialsCard from "../SpecialsCard";
+import TestimonialCard from "../TestimonialCard";
+
+// importing assets
+import greekSalad from "../../assets/greek-salad.jpg";
+import lemonDessert from "../../assets/lemon-desert.jpg";
+
 export function HeroSection() {
   return (
     <section className="bg-green-color px-28 py-24 flex justify-between items-center gap-32">
@@ -22,9 +31,7 @@ export function HeroSection() {
         <br />
         <br />
         <br />
-        <button className="py-4 px-8 bg-yellow-color text-lg rounded-2xl text-black-color font-semibold">
-          Reserve Table
-        </button>
+        <Button>Reserve Table</Button>
       </div>
       <img
         src={HeroImage}
@@ -39,8 +46,59 @@ export function HeroSection() {
 
 export const WeeklySpecials = () => {
   return (
-    <section className="px-28 py-24">
-      <h1 className="text-3xl font-semibold">Weekly Specials</h1>
+    <section className="px-28 py-24 text-black-color">
+      <div className="flex justify-between items-center">
+        <h1 className="text-3xl font-bold">Weekly Specials</h1>
+        <Button>Online Menu</Button>
+      </div>
+      <div className="mt-20 flex justify-around align-center">
+        <SpecialsCard
+          image={greekSalad}
+          name={"Greek Salad"}
+          cost={12.99}
+          description={`lorem ipsum dolor sit amet
+              with tasty sausages and
+              creamy leaves, you should
+              try it and you will love it.`}
+          link={`somelink`}
+        />
+        <SpecialsCard
+          image={greekSalad}
+          name="Bruchetta"
+          cost={12.99}
+          description={`lorem ipsum dolor sit amet
+              with tasty sausages and
+              creamy leaves, you should
+              try it and you will love it.`}
+          link={`bruchetta`}
+        />
+        <SpecialsCard
+          image={lemonDessert}
+          name="Lemon Dessert"
+          cost={12.99}
+          description={`lorem ipsum dolor sit amet
+          with tasty sausages and
+          creamy leaves, you should
+          try it and you will love it.`}
+          link={`lemon-desert`}
+        />
+      </div>
+    </section>
+  );
+};
+
+export const Testimonials = () => {
+  return (
+    <section className="px-28 py-24 bg-green-color">
+      <h2 className="text-4xl font-bold text-center text-yellow-color font-serif">
+        Testimonials
+      </h2>
+      <div role={`testimonials`} className="mt-12 flex justify-around">
+        <TestimonialCard />
+        <TestimonialCard />
+        <TestimonialCard />
+        <TestimonialCard />
+      </div>
     </section>
   );
 };

@@ -10,6 +10,7 @@ import LoginScreen from "./screens/LoginScreen";
 import OrderScreen from "./screens/OrderScreen";
 import ReservationScreen from "./screens/ReservationScreen";
 import MenuScreen from "./screens/MenuScreen";
+import ErrorScreen from "./screens/ErrorScreen";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/menu" element={<MenuScreen />} />
         <Route path="/reservation" element={<ReservationScreen />} />
         <Route path="/login" element={<LoginScreen />} />
+        <Route path="*" element={<ErrorScreen />} />
       </Routes>
     </BrowserRouter>
   );
