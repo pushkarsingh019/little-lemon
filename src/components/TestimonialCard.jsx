@@ -1,4 +1,5 @@
 import fullstar from "../assets/star.svg";
+import profileImage from "../assets/gavin-belson.jpg";
 
 const TestimonialCard = ({
   numberOfStars,
@@ -20,7 +21,7 @@ const TestimonialCard = ({
       <div className="px-4 py-3 flex justify-between items-center">
         <img
           alt="image"
-          src=""
+          src={profileImage}
           className="w-8 h-8 bg-green-color rounded-full"
         ></img>
         <p className="mr-3">Gavin Belson</p>

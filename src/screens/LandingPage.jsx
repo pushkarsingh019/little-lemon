@@ -6,6 +6,7 @@ import {
   HeroSection,
   WeeklySpecials,
   Testimonials,
+  CTA,
 } from "../components/partials/LandingComponents";
 
 function LandingPage() {
@@ -14,6 +15,7 @@ function LandingPage() {
       <HeroSection />
       <WeeklySpecials />
       <Testimonials />
+      <CTA />
     </Layout>
   );
 }

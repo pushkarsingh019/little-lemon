@@ -9,6 +9,8 @@ import TestimonialCard from "../TestimonialCard";
 // importing assets
 import greekSalad from "../../assets/greek-salad.jpg";
 import lemonDessert from "../../assets/lemon-desert.jpg";
+import restrauntImage from "../../assets/restaurant.jpg";
+import chefGarnish from "../../assets/chef-garnish.jpg";
 
 export function HeroSection() {
   return (
@@ -99,6 +101,55 @@ export const Testimonials = () => {
         <TestimonialCard />
         <TestimonialCard />
       </div>
+    </section>
+  );
+};
+
+export const BottomHero = () => {
+  return (
+    <section className="px-28 py-24 flex justify-between items-center gap-32">
+      <div className="pr-8">
+        <h1 className="text-5xl  font-semibold font-serif">Little Lemon</h1>
+        <code className="font-sans text-lg font-normal">Chicago</code>
+        <br />
+        <br />
+        <br />
+        <p className=" text-2xl font-sans">
+          We serve contemporary American cuisine With a diverse menu of
+          breakfast, sandwiches, salads, entrees and signature cocktails,
+          coffee, wine, and beer.
+        </p>
+        <br />
+        <br />
+        <br />
+        <Button>Reserve Table</Button>
+      </div>
+      <div class="relative w-full h-full">
+        <img
+          class="absolute object-cover"
+          src={restrauntImage}
+          alt="Background Image"
+          width={300}
+          height={500}
+        />
+        <img
+          class="absolute top-0 right-0 object-cover"
+          src={chefGarnish}
+          alt="Overlapping Image"
+          width={500}
+          height={500}
+        />
+      </div>
+    </section>
+  );
+};
+
+export const CTA = () => {
+  return (
+    <section className="text-center px-28 py-24">
+      <h1 className="text-4xl font-bold">So, what are you waiting for?</h1>
+      <br />
+      <Button>Reserve table</Button>
     </section>
   );
 };
